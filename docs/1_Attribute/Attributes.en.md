@@ -31,21 +31,21 @@ Color | Color number
 NrProdList | Production List Number
 NrTimberList | BOM number
 NrAssemlbyList | Assembly List Number
-RoundingValueLength [mm] [rounding value length
-RoundingValueWidth [mm] [Rounding value width
-RoundingValueHeight [mm] [rounding value height
+RoundingValueLength | rounding value length [mm]
+RoundingValueWidth  | Rounding value width [mm]
+RoundingValueHeight  | rounding value height [mm]
 ListOverwidth | Width raw [mm]
-ListOverheight [height raw] [mm
+ListOverheight | height raw [mm]
 ListOverlength | Length raw [mm]
-ProcessingType [output type
-ProcessingQuality [processing quality
-ProcessingAddData [additional settings
-RoughOverheightPos [mm] [Positive height axis
-RoughOverheightNeg [negative height axis] [mm
+ProcessingType | output type
+ProcessingQuality | processing quality
+ProcessingAddData | additional settings
+RoughOverheightPos | Positive height axis [mm] 
+RoughOverheightNeg | negative height axis [mm]
 RoughOverwidthPos | Positive width axis [mm]
 RoughOverwidthNeg | Negative width axis [mm]
 BIMBuilding | Building
-BIMStorey [floor 
+BIMStorey  | Storey 
 BimStoreyEleveationInMM | Floor Height in [mm]
 IfcElementType | IfcType (e.g. IfcMember)
 
