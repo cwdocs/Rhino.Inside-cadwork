@@ -1,11 +1,5 @@
 # Bienvenue dans RhinoInsideCadwork
-<br>
-<br>
-![Referenced SVG](img/logo-cadwork-animated.svg "get cadwork elements")
-<br>
-<br>
-<br>
-<br>
+
 
 RhinoInsideCadwork est un outil qui permet d'intégrer Rhino 7 dans cadwork 3D. Profitez des avantages du modeleur de surface dans votre environnement cadwork 3D. 
 
@@ -22,7 +16,7 @@ Food4Rhino est le service communautaire de McNeel pour les plug-ins. Les utilisa
 
 ## Grasshopper
 
-Grasshopper :cricket : est un éditeur graphique d'algorithmes intégré aux outils de modélisation de Rhino3D. Vous utilisez Grasshopper pour concevoir des algorithmes qui automatisent ensuite des tâches dans Rhino3D.
+Grasshopper :cricket: est un éditeur graphique d'algorithmes intégré aux outils de modélisation de Rhino3D. Vous utilisez Grasshopper pour concevoir des algorithmes qui automatisent ensuite des tâches dans Rhino3D.
 Le style visuel "plug-and-play" de Grasshopper donne aux concepteurs la possibilité de combiner des solutions créatives aux problèmes avec des systèmes de règles inédits en utilisant une interface graphique fluide.
 
 ![Backup Text](img/process.png "https://modelab.gitbooks.io/grasshopper-primer/content/1-foundations/1-2/2_grasshopper-component-parts.html"){: style="width:800px"}
@@ -39,7 +33,7 @@ Il existe quelques rares composants de Grasshopper qui ont des entrées mais pas
 
 ## Run RhinoInsideCadwork
 
-RhinoInsideCadwork :rhinoceros : est lancé via **Extra -> Rhino Live Link**. 
+RhinoInsideCadwork :rhinoceros: est lancé via **Extra -> Rhino Live Link**. 
 
 ![GIF](img/run.gif){: style="width:900px"}
 
