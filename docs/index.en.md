@@ -1,11 +1,5 @@
 # Welcome to RhinoInsideCadwork
-<br>
-<br>
-![Referenced SVG](img/logo-cadwork-animated.svg "get cadwork elements")
-<br>
-<br>
-<br>
-<br>
+
 
 RhinoInsideCadwork is a tool that allows you to embed Rhino 7 in cadwork 3D. Take advantage of the surface modeler in your cadwork 3D environment. 
 

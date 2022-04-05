@@ -1,11 +1,4 @@
 # Willkommen zu RhinoInsideCadwork
-<br>
-<br>
-![Referenced SVG](img/logo-cadwork-animated.svg "get cadwork elements")
-<br>
-<br>
-<br>
-<br>
 
 RhinoInsideCadwork ist ein Tool, welches die Einbettung von Rhino 7 in cadwork 3D ermöglicht. Nutzen Sie die Vorteile des Flächenmodellieres in ihrer cadwork 3D Umgebung. 
 
