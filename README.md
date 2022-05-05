@@ -1,8 +1,5 @@
 # Rhino.Inside cadwork
 
-[Rhino.Inside cadwork](https://github.com/cwdocs/Rhino.Inside-cadwork)
-=======
-
 RhinoInsideCadwork is a tool that allows you to embed Rhino 7 in cadwork 3D. Take advantage of the surface modeller in your cadwork 3D environment.
 
 Combining the two software allows the strengths of the CAD/CAM software to be combined with the strengths of Rhino/Grasshopper.
