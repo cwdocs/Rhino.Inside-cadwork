@@ -1,5 +1,7 @@
-# RhinoInsideCadwork
+# Rhino.Inside cadwork
 
+[Rhino.Inside cadwork](https://github.com/cwdocs/Rhino.Inside-cadwork)
+=======
 
 RhinoInsideCadwork is a tool that allows you to embed Rhino 7 in cadwork 3D. Take advantage of the surface modeller in your cadwork 3D environment.
 
@@ -25,5 +27,4 @@ Pull requests for GH examples are welcome. For major changes in the documentatio
 [![Documentation Status](https://readthedocs.org/projects/rhinoinsidecadwork/badge/?version=latest)](https://rhinoinsidecadwork.readthedocs.io/en/latest/?badge=latest)
 
 ![My gif](https://github.com/Brunner246/RhinoInsideCadwork/blob/main/docs/img/beams_curve.gif)
-
 
