@@ -1,3 +1,3 @@
-# RhinoInsideCadwork
+# Rhino.Inside cadwork
 
-[RhinoInsideCadwork](https://brunner246.github.io/RhinoInsideCadwork/)
+[Rhino.Inside cadwork](https://github.com/cwdocs/Rhino.Inside-cadwork)
