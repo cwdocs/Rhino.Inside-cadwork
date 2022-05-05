@@ -1,42 +1,42 @@
 ## Select Element(s)
 
-Ein Rechtsklick auf das Icon ruft das Kontext-Menü auf. 
-Mit der Funktion **Select Elements** können cadwork Brep-Elemente (Stab, Platte, Hilfsvolumen, Bolzen) selektiert und mit Grasshopper verknüpft werden. 
+A right click on the icon calls the context menu. 
+With the **Select Elements** function, cadwork Brep elements (bar, plate, auxiliary volume, bolt) can be selected and linked to Grasshopper. 
 
 ![Backup Text](../img/select_brep.png "BREP"){: style="width:600px"}
 
 Input           | comment 
 ----------------|:---------
-None | Elemente via Kontext Menü wählen/hinzufügen
+None | Select/add elements via context menu
 
 
 Output           | comment 
 -----------------|:---------
-OutputBrep | Rückgabe der Elemente in einer Liste
-OutputXSectPlane | Rückgabe der XY Ebene
-OutputCwAttr | Rückgabe der user Attribute
-OutputStdAttr | Rückgabe der standard Attribute
+OutputBrep | Returning the elements in a list
+OutputXSectPlane | Return of the XY plane
+OutputCwAttr | Return of the user attributes
+OutputStdAttr | Return of the standard attributes
 
 ![Backup Text](../img/brep.jpg "BREP")
 
 ## Select Surface(s)
 
-Ein Rechtsklick auf das Icon ruft das Kontext-Menü auf. 
-Mit der Funktion **Select Elements** können Flächen selektiert und mit Grasshopper verknüpft werden. 
+Right-clicking on the icon calls up the context menu. 
+With the **Select Elements** function, surfaces can be selected and linked to Grasshopper. 
 
 
 ![Backup Text](../img/selectSurface.jpg "Surface")
 
 Input           | comment 
 ----------------|:---------
-None | Elemente via Kontext Menü wählen/hinzufügen
+None | Select/add elements via context menu
 
 
 Output           | comment 
 -----------------|:---------
-OutputSurface| Rückgabe der Elemente in einer Liste
-OutputCwAttr | Rückgabe der user Attribute
-OutputStdAttr | Rückgabe der standard Attribute
+OutputSurface| Returning the elements in a list
+OutputCwAttr | Return of the user attributes
+OutputStdAttr | Return of the standard attributes
 
 ## Select Line(s)
 

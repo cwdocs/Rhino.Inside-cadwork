@@ -1,14 +1,14 @@
-# Welcome to RhinoInsideCadwork
+# Welcome to Rhino.Inside cadwork
 
 
-RhinoInsideCadwork is a tool that allows you to embed Rhino 7 in cadwork 3D. Take advantage of the surface modeler in your cadwork 3D environment. 
+Rhino.Inside cadwork is a tool that allows you to embed Rhino 7 in cadwork 3D. Take advantage of the surface modeler in your cadwork 3D environment. 
 
 
 ![Referenced GIF](img/beams_curve.gif "beams curve")
 
 ## Add-on Download
 
-[food4Rhino - RHINOINSIDE FOR CADWORK 3D](https://www.food4rhino.com/en/app/rhinoinside-cadwork-3d?lang=de)
+[food4Rhino - Rhino.Inside cadwork](https://www.food4rhino.com/en/app/rhinoinside-cadwork-3d?lang=de)
 
 Food4Rhino is McNeel's community service for plug-ins. Users can find the latest Rhino plug-ins, Grasshopper add-ons, scripts and much more. Moreover, they can contact developers and share their applications.
 
@@ -31,9 +31,9 @@ There are a few Grasshopper components that have inputs but no outputs, or vice 
 
 ![Backup Text](img/components.png "https://modelab.gitbooks.io/grasshopper-primer/content/1-foundations/1-2/2_grasshopper-component-parts.html"){: style="width:800px"}
 
-## Run RhinoInsideCadwork
+## Run Rhino.Inside cadwork
 
-RhinoInsideCadwork :rhinoceros: is started via **Extra -> Rhino Live Link**. 
+Rhino.Inside cadwork :rhinoceros: is started via **Extra -> Rhino Live Link**. 
 
 ![GIF](img/run.gif){: style="width:900px"}
 
