@@ -80,7 +80,7 @@ Output           | comment
 -----------------|:---------
 None | Element is generated in cadwork
 
-## Bauteilachsen
+## Parts Local Axes
 
 Local component axes are defined via the **Axis** component. 
 An X vector and a Z vector are specified. 
