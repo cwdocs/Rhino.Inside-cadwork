@@ -37,17 +37,17 @@ Rhino.Inside cadwork :rhinoceros: is started via **Extra -> Rhino Live Link**.
 
 ![GIF](img/run.gif){: style="width:900px"}
 
-## Komponenten
+## Components
 
 ![Backup Text](img/comps.png "Components")
 
 The components are divided into four sections. <br>
 The **Attributes** section contains components for handling attributes.<br>
-Im Abschnitt **Select** finden sie alle Komponeten zur Selektierung von cadwork Elementen. <br>
+In the **Select** section you will find all components for selecting cadwork elements. <br>
 In the **Create Elements** section you can find the components for creating cadwork elements. <br>
 The last section **Architecture** contains components for creating architectural elements. 
 
-### Kontext-Menü
+### Context menu
 
 Some components offer functionalities via the context menu. The context menu is called up by right-clicking on the icon. <br>
 
