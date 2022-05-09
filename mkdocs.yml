@@ -1,5 +1,5 @@
 site_name: RhinoInsideCadwork
-repo_url: https://github.com/Brunner246/RhinoInsideCadwork
+# repo_url: https://github.com/Brunner246/RhinoInsideCadwork
 
 # Copyright
 copyright: Copyright &copy; 2021 cadwork 
@@ -8,7 +8,7 @@ theme:
     name: material
     nav_style: dark
     logo: cw_logo.svg
-    version: v28
+    version: v29
     palette:
     - scheme: default
       toggle:
@@ -42,7 +42,7 @@ extra:
   copyright: Copyright & copy; 2021 cadwork
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/Brunner246
+      # link: https://github.com/Brunner246
       name: RhinoInsideCadwork
   alternate:
     - name: Deutsch
