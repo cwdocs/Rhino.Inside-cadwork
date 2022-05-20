@@ -100,7 +100,7 @@ OutputAxis | Rückgabe der cadwork Ebene
 
 ## Create Surface
 
-Die Komponente **AuxVol** generiert ein Hilfsvolumen in cadwork.
+Die Komponente **Surface** generiert eine Fläche in cadwork.
 ![Backup Text](../img/createSurface.jpg "Surface"){: style="width:600px"}
 
 Input           | comment 
@@ -116,7 +116,7 @@ None | Element wird in cadwork generiert
 
 ## Create Line
 
-Die Komponente **AuxVol** generiert ein Hilfsvolumen in cadwork.
+Die Komponente **Line** generiert eine Linie in cadwork.
 ![Backup Text](../img/createLine.jpg "Surface"){: style="width:600px"}
 
 Input           | comment 
@@ -132,7 +132,7 @@ None | Element wird in cadwork generiert
 
 ## Create Node
 
-Die Komponente **AuxVol** generiert ein Hilfsvolumen in cadwork.
+Die Komponente **Node** generiert einen Knoten in cadwork.
 ![Backup Text](../img/createNode.jpg "Surface"){: style="width:600px"}
 
 Input           | comment 
