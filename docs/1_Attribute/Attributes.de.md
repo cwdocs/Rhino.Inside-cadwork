@@ -118,8 +118,6 @@ CW$_BIMBuilding | String
 CW$_BIMStorey | String 
 CW$_IfcElementType | String
 
-
-
 ### ProcessingType
 Name           | Nummer (Integer) 
 -----------------|:---------
