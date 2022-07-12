@@ -3,7 +3,7 @@ name: send mail
 on:
   push:
     branches:
-      - master
+      - main
     paths-ignore:
       - README.md
   workflow_dispatch:
@@ -11,25 +11,25 @@ on:
 jobs:
   main:
     runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 1
-      matrix:
-        include:
-          - subject: Plain body (attachment)
-            attachments: action.yml
-            body: |
-              first line
-              second line
-          - subject: Plain body (Markdown)
-            convert_markdown: true
-            body: file://README.md
-          - subject: HTML body (Markdown)
-            convert_markdown: true
-            html_body: file://README.md
-          - subject: Multipart body (Markdown)
-            convert_markdown: true
-            body: file://README.md
-            html_body: file://README.md
+    # strategy:
+      # max-parallel: 1
+     #  matrix:
+        # include:
+          #- subject: Plain body (attachment)
+            #attachments: action.yml
+            #body: |
+              #first line
+              #second line
+          #- subject: Plain body (Markdown)
+            #convert_markdown: true
+            #body: file://README.md
+          #- subject: HTML body (Markdown)
+            #convert_markdown: true
+            #html_body: file://README.md
+          #- subject: Multipart body (Markdown)
+            #convert_markdown: true
+            #body: file://README.md
+            #html_body: file://README.md
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -47,6 +47,6 @@ jobs:
           reply_to: brunner@cadwork.swiss
           to: breitenmoser@cadwork.swiss, roche@cadwork-04.ch
           from: github-actions Rhino.Inside-cadwork
-          attachments: ${{matrix.attachments}}
+          # attachments: ${{matrix.attachments}}
           convert_markdown: ${{matrix.convert_markdown}}
           priority: high
