@@ -4,22 +4,23 @@ on:
     branches:
       - main
 jobs:
-  main:
-    runs-on: ubuntu-latest
+  build-and-publish:
+    name: Build and Publish
+    runs-on: ubuntu-20.04
     steps:
-      - name: Send mail
-        uses: ./.github/workflows/blank.yml
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          secure: true
-          username: ${{secrets.USERNAME}}
-          password: ${{secrets.PASSWORD}}
-          subject: Update Rhino.Inside-cadwork 
-          body: Build job of ${{github.repository}} completed successfully!
-          attachments: git.diff
-          cc: brunner@cadwork.swiss
-          reply_to: brunner@cadwork.swiss
-          to: breitenmoser@cadwork.swiss, roche@cadwork-04.ch
-          from: Michael Brunner
-          priority: high
+        - uses: actions/checkout@v2
+        - uses: actions/setup-python@v2
+          with:
+            server_address: smtp.gmail.com
+            server_port: 465
+            secure: true
+            username: ${{secrets.USERNAME}}
+            password: ${{secrets.PASSWORD}}
+            subject: Update Rhino.Inside-cadwork 
+            body: Build job of ${{github.repository}} completed successfully!
+            attachments: git.diff
+            cc: brunner@cadwork.swiss
+            reply_to: brunner@cadwork.swiss
+            to: breitenmoser@cadwork.swiss, roche@cadwork-04.ch
+            from: Michael Brunner
+            priority: high
