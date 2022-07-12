@@ -11,15 +11,15 @@ jobs:
         - uses: wadeww/send-email-action@master
           with:
             server_address: smtp.gmail.com
-            server_port: 465
+            port: 465
+            username: ${{secrets.MAIL_USERNAME}}
+            password: ${{secrets.MAIL_PASSWORD}}
+            subject: Workflow finished
+            body: Job completed ${{job.status}} Build job of ${{github.repository}} completed successfully!
+            to: breitenmoser@cadwork.swiss, roche@cadwork-04.ch
+            from: Me
             secure: true
-            username: ${{secrets.USERNAME}}
-            password: ${{secrets.PASSWORD}}
-            subject: Update Rhino.Inside-cadwork 
-            body: Build job of ${{github.repository}} completed successfully!
             attachments: git.diff
             cc: brunner@cadwork.swiss
             reply_to: brunner@cadwork.swiss
-            to: breitenmoser@cadwork.swiss, roche@cadwork-04.ch
-            from: Michael Brunner
             priority: high
