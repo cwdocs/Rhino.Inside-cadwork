@@ -1,19 +1,14 @@
 name: send mail
-
 on:
   push:
     branches:
       - main
-    paths-ignore:
-      - README.md
-  workflow_dispatch:
-
 jobs:
   main:
     runs-on: ubuntu-latest
     steps:
       - name: Send mail
-        uses: ./
+        uses: ./.github/workflows/blank.yml
         with:
           server_address: smtp.gmail.com
           server_port: 465
