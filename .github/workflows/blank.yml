@@ -1,4 +1,4 @@
-name: send mail
+name: Send some mail
 on:
   push:
     branches:
@@ -8,7 +8,7 @@ jobs:
     name: Build and Publish
     runs-on: ubuntu-20.04
     steps:
-        - uses: Rhino.Inside-cadwork/send-email-action@main
+        - uses: wadeww/send-email-action@master
           with:
             server_address: smtp.gmail.com
             server_port: 465
