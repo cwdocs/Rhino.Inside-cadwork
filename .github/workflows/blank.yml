@@ -1,25 +1,16 @@
-name: Send some mail
-on:
-  push:
-    branches:
-      - main
-jobs:
-  build-and-publish:
-    name: Build and Publish
-    runs-on: ubuntu-20.04
-    steps:
-        - uses: wadeww/send-email-action@master
-          with:
-            server_address: smtp.gmail.com
-            port: 465
-            username: ${{secrets.MAIL_USERNAME}}
-            password: ${{secrets.MAIL_PASSWORD}}
-            subject: Workflow finished
-            body: Job completed ${{job.status}} Build job of ${{github.repository}} completed successfully!
-            to: breitenmoser@cadwork.swiss, roche@cadwork-04.ch
-            from: Me
-            secure: true
-            attachments: git.diff
-            cc: brunner@cadwork.swiss
-            reply_to: brunner@cadwork.swiss
-            priority: high
+- name: Send some mail
+  uses: wadeww/send-email-action@master
+  with:
+    server_address: smtp.gmail.com
+    port: 465
+    username: ${{secrets.MAIL_USERNAME}}
+    password: ${{secrets.MAIL_PASSWORD}}
+    subject: Workflow finished
+    body: Job completed ${{job.status}} Build job of ${{github.repository}} completed successfully!
+    to: breitenmoser@cadwork.swiss, roche@cadwork-04.ch
+    from: Me
+    secure: true
+    attachments: git.diff
+    cc: brunner@cadwork.swiss
+    reply_to: brunner@cadwork.swiss
+    priority: high
