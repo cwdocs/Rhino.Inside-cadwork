@@ -1,5 +1,4 @@
 :root {
-
     /* Primary color shades */
     --md-primary-fg-color: #10069f;
     --md-primary-fg-color--light: #10069f;
@@ -16,7 +15,6 @@
   }
   
   :root > * {
-  
     /* Code block color shades */
     --md-code-bg-color: hsla(0, 0%, 96%, 1);
     --md-code-fg-color: hsla(200, 18%, 26%, 1);
