@@ -14,13 +14,13 @@ jobs:
       - name: Send mail
         uses: AlexisMateo/sendmail-action@5
         with:
-          server_address: smtp.gmail.com
-          smtp-server-port: 25
+          smtp-server: ${{ secrets.SMTP_SERVER }}
+          smtp-server-port: ${{ secrets.SMTP_SERVER_PORT }}
           auth-user: ${{ secrets.AUTH_USER }}
           auth-password: ${{secrets.EMAIL_PASSWORD }}
           subject: correciones a ${{github.repository}}
           body: ${{github.context.payload}}
-          from: brunner@cadwork.swiss
-          to: breitenmoser@cadwork.swiss
+          from: ${{ secrets.EMAIL_FROM }}
+          to: ${{ secrets.EMAIL_RECIVER }}
           is-tls: false
           commit-message: true
