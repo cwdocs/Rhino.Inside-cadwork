@@ -14,7 +14,7 @@ jobs:
         
       - name: Send mail
         if: always()
-        uses: dawidd6/action-send-mail@v2
+        uses: devellany/send-mailer@v1.0.2 # dawidd6/action-send-mail@v2
         with:
           # mail server settings
           server_address: ${{ secrets.SMTP_SERVER }}
@@ -26,7 +26,7 @@ jobs:
           subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
           # email body as text
           body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
-          attachments: git.diff,./dist/static/*.js
+          attachments: '[{"path":"README.md"}]'
           # comma-separated string, send email to
           to: ${{ secrets.EMAIL_RECIVER }}
           cc: brunner@cadwork.swiss
