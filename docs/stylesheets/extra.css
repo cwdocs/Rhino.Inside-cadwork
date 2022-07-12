@@ -30,7 +30,6 @@
   [data-md-color-scheme="slate"] {
     --md-hue: 190; /* [0, 20] */
   }
-
   .center {
     display: block;
     margin: 0 auto;
