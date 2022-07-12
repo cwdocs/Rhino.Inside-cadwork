@@ -16,18 +16,18 @@ jobs:
         if: always()
         uses: dawidd6/action-send-mail@v2
         with:
-          # mail server settings
+          
           server_address: ${{ secrets.SMTP_SERVER }}
           server_port: ${{ secrets.SMTP_SERVER_PORT }}
-          # user credentials
+          
           username: ${{ secrets.MAIL_USER }}
           password: ${{ secrets.GH_MAIL }}
-          # email subject
+          
           subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
-          # email body as text
-          body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}. Something has changed in the Docs, please make the updates in your language.\nCheck changes on [Github Diff](https://github.com/cwdocs/Rhino.Inside-cadwork/compare/develop...main) 
+          
+          body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}. Some text has changed in the Docs, please make the updates in your language. Check changes on https://github.com/cwdocs/Rhino.Inside-cadwork/compare/develop...main and click on **Files changed**.
           # attachments: '[{"path":"README.md"}]'
-          # comma-separated string, send email to
+          
           to: ${{ secrets.EMAIL_RECIVER }}
           cc: brunner@cadwork.swiss
           # from email name
