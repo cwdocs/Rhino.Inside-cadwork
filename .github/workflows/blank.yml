@@ -1,22 +1,27 @@
-name: Send email
+
+name: send mail action
+
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types: [closed]
+
 jobs:
-  email:
+  main:
     runs-on: ubuntu-latest
     steps:
-      - name: Send email
-        uses: AlexisMateo/sendmail-action@5
+      - name: Checkout
+        uses: actions/checkout@v1
+      
+      - name: Send mail
+        uses: ./
         with:
           smtp-server: ${{ secrets.SMTP_SERVER }}
-          smtp-server-port: ${{ secrets.SMTP_SERVER_PORT }}
+          smtp-server-port: 25
           auth-user: ${{ secrets.AUTH_USER }}
           auth-password: ${{secrets.EMAIL_PASSWORD }}
           subject: correciones a ${{github.repository}}
           body: ${{github.context.payload}}
-          from: ${{ secrets.EMAIL_FROM }}
+          from: brunner@cadwork.swiss
           to: breitenmoser@cadwork.swiss
           is-tls: false
           commit-message: true
