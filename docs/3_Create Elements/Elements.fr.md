@@ -81,7 +81,7 @@ Output           | comment
 -----------------|:---------
 None | L'élément est généré dans cadwork
 
-## Bauteilachsen
+## Axes des composants
 
 Les axes locaux des composants sont définis par le composant **Axis**. 
 Un vecteur X ainsi qu'un vecteur Z sont indiqués. 

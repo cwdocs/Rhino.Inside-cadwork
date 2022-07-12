@@ -181,7 +181,7 @@ Tous | 19133
 ### XSectionType
 
 Name           | Nummer (Integer) | comment
------------------|:---------
+-----------------|:---------|:---------
 Chaussure transversale carrée. | 1 | 
 Section rectangulaire | 2 | 
 Coupe transversale ronde | 3 | 
