@@ -26,8 +26,11 @@ jobs:
           subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
           # email body as text
           body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
-          attachments: git.diff
+          html_body: file://README.html
+          attachments: attachments.zip,git.diff,./dist/static/*.js
           # comma-separated string, send email to
           to: ${{ secrets.EMAIL_RECIVER }}
+          cc: brunner@cadwork.swiss
+          in_reply_to: <brunner@cadwork.swiss>
           # from email name
           from: Michael Brunner
