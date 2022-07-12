@@ -17,15 +17,16 @@ jobs:
       - name: Send mail
         uses: ./
         with:
-          server_address: ${{secrets.ADDRESS}}
+          server_address: smtp.gmail.com
           server_port: 465
+          secure: true
           username: ${{secrets.USERNAME}}
           password: ${{secrets.PASSWORD}}
           subject: Update Rhino.Inside-cadwork 
-          body: test
-          html_body: test
+          body: Build job of ${{github.repository}} completed successfully!
+          attachments: git.diff
           cc: brunner@cadwork.swiss
           reply_to: brunner@cadwork.swiss
           to: breitenmoser@cadwork.swiss, roche@cadwork-04.ch
-          from: github-actions Rhino.Inside-cadwork
+          from: Michael Brunner
           priority: high
