@@ -20,8 +20,8 @@ jobs:
           server_address: ${{ secrets.SMTP_SERVER }}
           server_port: ${{ secrets.SMTP_SERVER_PORT }}
           # user credentials
-          username: ${{ secrets.AUTH_USER }}
-          password: ${{ secrets.EMAIL_PASSWORD }}
+          username: ${{ secrets.MAIL_USER }}
+          password: ${{ secrets.GH_MAIL }}
           # email subject
           subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
           # email body as text
