@@ -25,7 +25,7 @@ jobs:
           # email subject
           subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
           # email body as text
-          body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}. Something has changed in the Docs, please make the updates in your language.
+          body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}. Something has changed in the Docs, please make the updates in your language.\nCheck changes on [Github Diff](https://github.com/cwdocs/Rhino.Inside-cadwork/compare/develop...main) 
           # attachments: '[{"path":"README.md"}]'
           # comma-separated string, send email to
           to: ${{ secrets.EMAIL_RECIVER }}
