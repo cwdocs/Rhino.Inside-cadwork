@@ -18,7 +18,7 @@ jobs:
         with:
           #smtp-server: ${{ secrets.SMTP_SERVER }}
           #smtp-server-port: ${{ secrets.SMTP_SERVER_PORT }}
-          server_address: ${{ secrets.SMTP_SERVER }} # smtp.gmail.com
+          server_address: ${{ secrets.GH_MAIL }} # smtp.gmail.com
           # Required mail server port:
           server_port: 465
           username:: ${{ secrets.AUTH_USER }}
