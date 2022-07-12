@@ -1,33 +1,14 @@
-name: send mail action
+name: Build
 
 on:
   push:
-    branches:
-      - master
-  workflow_dispatch:
+    branches: main
 
 jobs:
-  main:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-        
-      - name: Send mail
-        uses: dawidd6/action-send-mail@v3
-        with:
-          #smtp-server: ${{ secrets.SMTP_SERVER }}
-          #smtp-server-port: ${{ secrets.SMTP_SERVER_PORT }}
-          server_address: ${{ secrets.GH_MAIL }} # smtp.gmail.com
-          # Required mail server port:
-          server_port: 465
-          username:: ${{ secrets.AUTH_USER }}
-          password: ${{secrets.EMAIL_PASSWORD }}
-          subject: correciones a ${{github.repository}}
-          body: test # ${{github.context.payload}}
-          from: github-actions #${{ secrets.EMAIL_FROM }}
-          to: brunner@cadwork.swiss, breitenmoser@cadwork.swiss, brunner246@gmail.com # ${{ secrets.EMAIL_RECIVER }}
-          ignore_cert: true
-          convert_markdown: true
-          attachments: git.diff
-          priority: high
+      - uses: actions/checkout@v2
+
+      - name: Hello World
+        run: echo Hello, world!
