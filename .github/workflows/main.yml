@@ -12,15 +12,16 @@ jobs:
         uses: actions/checkout@v1
       
       - name: Send mail
-        uses: AlexisMateo/sendmail-action@5
+        uses: dawidd6/action-send-mail@v3
         with:
           smtp-server: ${{ secrets.SMTP_SERVER }}
           smtp-server-port: ${{ secrets.SMTP_SERVER_PORT }}
-          auth-user: ${{ secrets.AUTH_USER }}
-          auth-password: ${{secrets.EMAIL_PASSWORD }}
+          username:: ${{ secrets.AUTH_USER }}
+          password: ${{secrets.EMAIL_PASSWORD }}
           subject: correciones a ${{github.repository}}
           body: ${{github.context.payload}}
           from: ${{ secrets.EMAIL_FROM }}
           to: ${{ secrets.EMAIL_RECIVER }}
-          is-tls: false
-          commit-message: true
+          ignore_cert: true
+          convert_markdown: true
+          attachments: git.diff
