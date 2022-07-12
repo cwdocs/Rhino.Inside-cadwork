@@ -1,30 +1,33 @@
 name: send mail action
 
 on:
-  pull_request:
-    types: [closed]
+  push:
+    branches:
+      - master
+  workflow_dispatch:
 
 jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-      
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
       - name: Send mail
         uses: dawidd6/action-send-mail@v3
         with:
           #smtp-server: ${{ secrets.SMTP_SERVER }}
           #smtp-server-port: ${{ secrets.SMTP_SERVER_PORT }}
-          server_address: smtp.gmail.com
+          server_address: ${{ secrets.SMTP_SERVER }} # smtp.gmail.com
           # Required mail server port:
           server_port: 465
           username:: ${{ secrets.AUTH_USER }}
           password: ${{secrets.EMAIL_PASSWORD }}
           subject: correciones a ${{github.repository}}
-          body: ${{github.context.payload}}
-          from: ${{ secrets.EMAIL_FROM }}
-          to: ${{ secrets.EMAIL_RECIVER }}
+          body: test # ${{github.context.payload}}
+          from: github-actions #${{ secrets.EMAIL_FROM }}
+          to: brunner@cadwork.swiss, breitenmoser@cadwork.swiss, brunner246@gmail.com # ${{ secrets.EMAIL_RECIVER }}
           ignore_cert: true
           convert_markdown: true
           attachments: git.diff
+          priority: high
