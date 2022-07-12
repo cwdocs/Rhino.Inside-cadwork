@@ -14,14 +14,16 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: ✨ Send email, you star
-        uses: dawidd6/action-send-mail@v1.3.0
+      - name: Send email
+        uses: AlexisMateo/sendmail-action@5
         with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          username: quadmx08
-          password: ${{ secrets.GMAIL_PASS }}
-          subject: Your a star ✨
-          body: ${{ github.actor }} just some testings...!!! ${{ github.repository }}
+          smtp-server: ${{ secrets.SMTP_SERVER }}
+          smtp-server-port: ${{ secrets.SMTP_SERVER_PORT }}
+          auth-user: ${{ secrets.AUTH_USER }}
+          auth-password: ${{secrets.EMAIL_PASSWORD }}
+          subject: correciones a ${{github.repository}}
+          body: ${{github.context.payload}}
+          from: ${{ secrets.EMAIL_FROM }}
           to: breitenmoser@cadwork.swiss
-          from: brunner@cadwork.swiss
+          is-tls: false
+          commit-message: true
