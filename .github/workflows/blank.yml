@@ -8,8 +8,7 @@ jobs:
     name: Build and Publish
     runs-on: ubuntu-20.04
     steps:
-        - uses: actions/checkout@v2
-        - uses: actions/setup-python@v2
+        - uses: Rhino.Inside-cadwork/send-email-action@main
           with:
             server_address: smtp.gmail.com
             server_port: 465
