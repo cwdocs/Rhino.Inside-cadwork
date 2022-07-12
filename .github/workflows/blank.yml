@@ -15,7 +15,7 @@ jobs:
       - name: Send mail
         uses: ./
         with:
-          smtp-server: ${{ secrets.SMTP_SERVER }}
+          server_address: smtp.gmail.com
           smtp-server-port: 25
           auth-user: ${{ secrets.AUTH_USER }}
           auth-password: ${{secrets.EMAIL_PASSWORD }}
