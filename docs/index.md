@@ -1,7 +1,6 @@
 # Willkommen zu Rhino.Inside cadwork
 
-Rhino.Inside cadwork ist ein Tool, welches die Einbettung von Rhino 7 in cadwork 3D ermöglicht. Nutzen Sie die Vorteile des Flächenmodellieres in ihrer cadwork 3D Umgebung. 
-
+Rhino.Inside cadwork ist ein Tool, welches die Einbettung von Rhino 7 in cadwork 3D ermöglicht. Nutzen Sie die Vorteile des Flächenmodellieres in ihrer cadwork 3D Umgebung.
 
 ![Referenced GIF](img/beams_curve.gif "beams curve")
 
@@ -32,7 +31,7 @@ Es gibt einige wenige Grasshopper-Komponenten, die Eingänge, aber keine Ausgän
 
 ## Run Rhino.Inside cadwork
 
-Rhino.Inside cadwork :rhinoceros: wird über **Extra -> Rhino Live Link** gestartet. 
+Rhino.Inside cadwork :rhinoceros: wird über **Extra -> Rhino Live Link** gestartet.
 
 ![GIF](img/run.gif){: style="width:900px"}
 
@@ -44,7 +43,7 @@ Die Komponenten sind in vier Abschnitte gegliedert. <br>
 Im Abschnitt **Attributes** finden sich Komponenten zum Handling von Attributen.<br>
 Im Abschnitt **Select** finden sie alle Komponeten zur Selektierung von cadwork Elementen. <br>
 Im Abschnitt **Create Elements** sind die Komponenten zur Erstellung von cadwork Elementen zu finden. <br>
-Im letzten Abschnitt **Architecture** sind Komponenten zur Erstellung von Architekturelementen zu finden. 
+Im letzten Abschnitt **Architecture** sind Komponenten zur Erstellung von Architekturelementen zu finden.
 
 ### Kontext-Menü
 
@@ -52,13 +51,10 @@ Einige Komponenten bieten Funktionalitäten über das Kontext-Menü an. Das Kont
 
 Über das Kontext-Menü lassen sich
 
-* Cadwork Elemente auswählen
-* Preview 
-* Bake Elements <br>
+- Cadwork Elemente oder 3d/3dc auswählen
+- Preview
+- Bake Elements <br>
 
-steuern. 
+steuern.
 
 ![Referenced GIF](img/get_elements.gif "get cadwork elements")
-
-
-
