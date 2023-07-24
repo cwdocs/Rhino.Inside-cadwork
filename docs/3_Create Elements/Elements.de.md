@@ -7,16 +7,20 @@ Folgende Komponenten ermöglichen das generieren von cadwork Elementen. Die Elem
 ## Beam
 
 Die Komponente **Beam** generiert einen Stab in cadwork.
-Nebst dem verpflichtenden Geometrie Input, stehen optional die Möglichkeiten **Axis, CwAttr, StdAttr** zur Verfügung.
+Nebst dem verpflichtenden Geometrie Input, stehen optionale Möglichkeiten zur Verfügung.
 
 ![Backup Text](../img/beam.png "Beam"){: style="width:600px"}
 
-| Input   | comment                      |
-| ------- | :--------------------------- |
-| Geom    | Brep closed                  |
-| Axis    | Achssystem [optional]        |
-| CwAttr  | Userattribute [optional]     |
-| StdAttr | Standardattribute [optional] |
+| Input          | comment                                   |
+| -------------- | :---------------------------------------- |
+| Geom           | Brep closed                               |
+| Axis           | Achssystem [optional]                     |
+| CwAttr         | Userattribute [optional]                  |
+| StdAttr        | Standardattribute [optional]              |
+| Endtype(Start) | Endtyp Startpunkt Bauteilachse [optional] |
+| Endtype(End)   | Endtyp Endpunkt Bauteilachse [optional]   |
+| BakeCW         | Backen in cadwork [optional]              |
+| ElementID      | Element ID [optional]                     |
 
 | Output | comment                           |
 | ------ | :-------------------------------- |
@@ -31,12 +35,16 @@ Oder via Input BakeCW.
 Die Komponente **Panel** generiert eine Platte in cadwork.
 ![Backup Text](../img/panel.png "Panel"){: style="width:600px"}
 
-| Input   | comment                      |
-| ------- | :--------------------------- |
-| Geom    | Brep closed                  |
-| Axis    | Achssystem [optional]        |
-| CwAttr  | Userattribute [optional]     |
-| StdAttr | Standardattribute [optional] |
+| Input          | comment                                   |
+| -------------- | :---------------------------------------- |
+| Geom           | Brep closed                               |
+| Axis           | Achssystem [optional]                     |
+| CwAttr         | Userattribute [optional]                  |
+| StdAttr        | Standardattribute [optional]              |
+| Endtype(Start) | Endtyp Startpunkt Bauteilachse [optional] |
+| Endtype(End)   | Endtyp Endpunkt Bauteilachse [optional]   |
+| BakeCW         | Backen in cadwork [optional]              |
+| ElementID      | Element ID [optional]                     |
 
 | Output | comment                           |
 | ------ | :-------------------------------- |
@@ -47,11 +55,13 @@ Die Komponente **Panel** generiert eine Platte in cadwork.
 Die Komponente **AuxVol** generiert ein Hilfsvolumen in cadwork.
 ![Backup Text](../img/auxi.png "Panel"){: style="width:600px"}
 
-| Input   | comment                      |
-| ------- | :--------------------------- |
-| Geom    | Brep closed                  |
-| CwAttr  | Userattribute [optional]     |
-| StdAttr | Standardattribute [optional] |
+| Input     | comment                      |
+| --------- | :--------------------------- |
+| Geom      | Brep closed                  |
+| CwAttr    | Userattribute [optional]     |
+| StdAttr   | Standardattribute [optional] |
+| BakeCW    | Backen in cadwork [optional] |
+| ElementID | Element ID [optional]        |
 
 | Output | comment                           |
 | ------ | :-------------------------------- |
@@ -65,14 +75,15 @@ Die Komponente **Drilling** generiert einen Bolzen in cadwork. Die Komponenten b
 
 ![Backup Text](../img/drilling.png "Drilling"){: style="width:600px"}
 
-| Input      | comment             |
-| ---------- | :------------------ |
-| Point_1    | Start Point         |
-| Point_2    | End Point           |
-| Diameter   | Durchmesser [mm]    |
-| Supplement | Zugabe Bohrung [mm] |
-| CwAttr     | User Attribute      |
-| StdAttr    | Standardattribute   |
+| Input      | comment                        |
+| ---------- | :----------------------------- |
+| Point_1    | Start Point                    |
+| Point_2    | End Point                      |
+| Diameter   | Durchmesser [mm]               |
+| Supplement | Zugabe Bohrung [mm] [optional] |
+| CwAttr     | User Attribute [optional]      |
+| StdAttr    | Standardattribute [optional]   |
+| BakeCW     | Backen in cadwork [optional]   |
 
 | Output | comment                           |
 | ------ | :-------------------------------- |
@@ -89,8 +100,9 @@ Die Komponente **Connector Axis** erzeugt eine Standard-Verbindungsmittel-Achse 
 | Connector Name | Standard Connector Axis Name |
 | Point_1        | Start Point                  |
 | Point_2        | End Point                    |
-| CwAttr         | User Attribute               |
-| StdAttr        | Standardattribute            |
+| CwAttr         | User Attribute [optional]    |
+| StdAttr        | Standardattribute [optional] |
+| BakeCW         | Backen in cadwork [optional] |
 
 | Output | comment                           |
 | ------ | :-------------------------------- |
@@ -117,11 +129,13 @@ Es wird ein X-, sowie ein Z-Vector angegeben.
 Die Komponente **Surface** generiert eine Fläche in cadwork.
 ![Backup Text](../img/createSurface.jpg "Surface"){: style="width:600px"}
 
-| Input   | comment                      |
-| ------- | :--------------------------- |
-| Geom    | Surface                      |
-| CwAttr  | Userattribute [optional]     |
-| StdAttr | Standardattribute [optional] |
+| Input     | comment                      |
+| --------- | :--------------------------- |
+| Geom      | Surface                      |
+| CwAttr    | Userattribute [optional]     |
+| StdAttr   | Standardattribute [optional] |
+| BakeCW    | Backen in cadwork [optional] |
+| ElementID | Element ID [optional]        |
 
 | Output | comment                           |
 | ------ | :-------------------------------- |
@@ -132,11 +146,13 @@ Die Komponente **Surface** generiert eine Fläche in cadwork.
 Die Komponente **Line** generiert eine Linie in cadwork.
 ![Backup Text](../img/createLine.jpg "Surface"){: style="width:600px"}
 
-| Input   | comment                      |
-| ------- | :--------------------------- |
-| Geom    | Line                         |
-| CwAttr  | Userattribute [optional]     |
-| StdAttr | Standardattribute [optional] |
+| Input     | comment                      |
+| --------- | :--------------------------- |
+| Geom      | Line                         |
+| CwAttr    | Userattribute [optional]     |
+| StdAttr   | Standardattribute [optional] |
+| BakeCW    | Backen in cadwork [optional] |
+| ElementID | Element ID [optional]        |
 
 | Output | comment                           |
 | ------ | :-------------------------------- |
@@ -147,11 +163,13 @@ Die Komponente **Line** generiert eine Linie in cadwork.
 Die Komponente **Node** generiert einen Knoten in cadwork.
 ![Backup Text](../img/createNode.jpg "Surface"){: style="width:600px"}
 
-| Input   | comment                      |
-| ------- | :--------------------------- |
-| Geom    | Point                        |
-| CwAttr  | Userattribute [optional]     |
-| StdAttr | Standardattribute [optional] |
+| Input     | comment                      |
+| --------- | :--------------------------- |
+| Geom      | Point                        |
+| CwAttr    | Userattribute [optional]     |
+| StdAttr   | Standardattribute [optional] |
+| BakeCW    | Backen in cadwork [optional] |
+| ElementID | Element ID [optional]        |
 
 | Output | comment                           |
 | ------ | :-------------------------------- |

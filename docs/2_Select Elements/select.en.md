@@ -9,12 +9,18 @@ With the **Select Elements** function, cadwork Brep elements (bar, plate, auxili
 | ----- | :----------------------------------- |
 | None  | Select/add elements via context menu |
 
-| Output           | comment                           |
-| ---------------- | :-------------------------------- |
-| OutputBrep       | Returning the elements in a list  |
-| OutputXSectPlane | Return of the XY plane            |
-| OutputCwAttr     | Return of the user attributes     |
-| OutputStdAttr    | Return of the standard attributes |
+| Output         | comment            |
+| -------------- | :----------------- |
+| Geometry       | Geometry (list)    |
+| XSection       | Construction plane |
+| X-Local-Axis   | X-axis             |
+| Z-Local-Axis   | Z-axis             |
+| P1             | axis point 1       |
+| P2             | axis point 2       |
+| P3             | axis point 3       |
+| Cw-Attributes  | User Attribute     |
+| Std-Attributes | Standard Attribute |
+| Element-ID     | Element ID         |
 
 ![Backup Text](../img/brep.jpg "BREP")
 
@@ -29,11 +35,12 @@ With the **Select Elements** function, surfaces can be selected and linked to Gr
 | ----- | :----------------------------------- |
 | None  | Select/add elements via context menu |
 
-| Output        | comment                           |
-| ------------- | :-------------------------------- |
-| OutputSurface | Returning the elements in a list  |
-| OutputCwAttr  | Return of the user attributes     |
-| OutputStdAttr | Return of the standard attributes |
+| Output         | comment            |
+| -------------- | :----------------- |
+| Geometry       | Geometry (list)    |
+| Cw-Attributes  | User Attribute     |
+| Std-Attributes | Standard Attribute |
+| Element-ID     | Element ID         |
 
 ## Select Line(s)
 
@@ -46,11 +53,12 @@ With the **Select Elements** function, lines can be selected and linked to Grass
 | ----- | :----------------------------------- |
 | None  | Select/add elements via context menu |
 
-| Output        | comment                           |
-| ------------- | :-------------------------------- |
-| OutputLine    | Returning the elements in a list  |
-| OutputCwAttr  | Return of the user attributes     |
-| OutputStdAttr | Return of the standard attributes |
+| Output         | comment            |
+| -------------- | :----------------- |
+| Geometry       | Geometry (list)    |
+| Cw-Attributes  | User Attribute     |
+| Std-Attributes | Standard Attribute |
+| Element-ID     | Element ID         |
 
 ## Select Node(s)
 
@@ -63,8 +71,9 @@ With the **Select Elements** function, nodes can be selected and linked to Grass
 | ----- | :----------------------------------- |
 | None  | Select/add elements via context menu |
 
-| Output        | comment                           |
-| ------------- | :-------------------------------- |
-| OutputNode    | Returning the elements in a list  |
-| OutputCwAttr  | Return of the user attributes     |
-| OutputStdAttr | Return of the standard attributes |
+| Output         | comment            |
+| -------------- | :----------------- |
+| Geometry       | Geometry (list)    |
+| Cw-Attributes  | User Attribute     |
+| Std-Attributes | Standard Attribute |
+| Element-ID     | Element ID         |

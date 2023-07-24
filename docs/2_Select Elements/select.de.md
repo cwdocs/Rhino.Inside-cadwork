@@ -9,12 +9,18 @@ Mit der Funktion **Select Elements** können cadwork Brep-Elemente (Stab, Platte
 | ----- | :------------------------------------------ |
 | None  | Elemente via Kontext Menü wählen/hinzufügen |
 
-| Output           | comment                              |
-| ---------------- | :----------------------------------- |
-| OutputBrep       | Rückgabe der Elemente in einer Liste |
-| OutputXSectPlane | Rückgabe der XY Ebene                |
-| OutputCwAttr     | Rückgabe der user Attribute          |
-| OutputStdAttr    | Rückgabe der standard Attribute      |
+| Output         | comment                     |
+| -------------- | :-------------------------- |
+| Geometry       | Geometrie(n) in einer Liste |
+| XSection       | Konstruktionsebene          |
+| X-Local-Axis   | X-Achse                     |
+| Z-Local-Axis   | Z-Achse                     |
+| P1             | Achspunkt 1                 |
+| P2             | Achspunkt 2                 |
+| P3             | Achspunkt 3                 |
+| Cw-Attributes  | User Attribute              |
+| Std-Attributes | Standard Attribute          |
+| Element-ID     | Element ID                  |
 
 ![Backup Text](../img/brep.jpg "BREP")
 
@@ -29,11 +35,12 @@ Mit der Funktion **Select Elements** können Flächen selektiert und mit Grassho
 | ----- | :------------------------------------------ |
 | None  | Elemente via Kontext Menü wählen/hinzufügen |
 
-| Output        | comment                              |
-| ------------- | :----------------------------------- |
-| OutputSurface | Rückgabe der Elemente in einer Liste |
-| OutputCwAttr  | Rückgabe der user Attribute          |
-| OutputStdAttr | Rückgabe der standard Attribute      |
+| Output         | comment                 |
+| -------------- | :---------------------- |
+| Geometry       | Elemente in einer Liste |
+| Cw-Attributes  | User Attribute          |
+| Std-Attributes | Standard Attribute      |
+| Element-ID     | Element ID              |
 
 ## Select Line(s)
 
@@ -46,11 +53,12 @@ Mit der Funktion **Select Elements** können Linien selektiert und mit Grasshopp
 | ----- | :------------------------------------------ |
 | None  | Elemente via Kontext Menü wählen/hinzufügen |
 
-| Output        | comment                              |
-| ------------- | :----------------------------------- |
-| OutputLine    | Rückgabe der Elemente in einer Liste |
-| OutputCwAttr  | Rückgabe der user Attribute          |
-| OutputStdAttr | Rückgabe der standard Attribute      |
+| Output         | comment                 |
+| -------------- | :---------------------- |
+| Geometry       | Elemente in einer Liste |
+| Cw-Attributes  | User Attribute          |
+| Std-Attributes | Standard Attribute      |
+| Element-ID     | Element ID              |
 
 ## Select Node(s)
 
@@ -63,8 +71,9 @@ Mit der Funktion **Select Elements** können Knoten selektiert und mit Grasshopp
 | ----- | :------------------------------------------ |
 | None  | Elemente via Kontext Menü wählen/hinzufügen |
 
-| Output        | comment                              |
-| ------------- | :----------------------------------- |
-| OutputNode    | Rückgabe der Elemente in einer Liste |
-| OutputCwAttr  | Rückgabe der user Attribute          |
-| OutputStdAttr | Rückgabe der standard Attribute      |
+| Output         | comment                 |
+| -------------- | :---------------------- |
+| Geometry       | Elemente in einer Liste |
+| Cw-Attributes  | User Attribute          |
+| Std-Attributes | Standard Attribute      |
+| Element-ID     | Element ID              |

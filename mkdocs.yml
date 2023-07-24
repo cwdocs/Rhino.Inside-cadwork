@@ -1,5 +1,4 @@
 site_name: RhinoInsideCadwork
-# repo_url: https://github.com/Brunner246/RhinoInsideCadwork
 
 # Copyright
 copyright: Copyright &copy; 2021 cadwork 
@@ -8,15 +7,12 @@ theme:
     name: material
     nav_style: dark
     logo: cw_logo.svg
-    version: v29
     palette:
     - scheme: default
       toggle:
         name: Switch to light mode
         icon: material/weather-sunny
     - scheme: slate
-      #primary: grey
-      #accent: blue
       toggle:
         name: Switch to dark mode
         icon: material/weather-night
@@ -42,7 +38,6 @@ extra:
   copyright: Copyright & copy; 2021 cadwork
   social:
     - icon: fontawesome/brands/github
-      # link: https://github.com/Brunner246
       name: RhinoInsideCadwork
   alternate:
     - name: Deutsch
@@ -54,8 +49,6 @@ extra:
     - name: English
       link: ./en/
       lang: en
-  version:
-    provider: mike
 extra_css:
   - extra/svg.css
 extra_css:

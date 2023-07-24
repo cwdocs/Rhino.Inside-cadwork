@@ -11,12 +11,16 @@ In addition to the mandatory geometry input, the options **Axis, CwAttr, StdAttr
 
 ![Backup Text](../img/beam.png "Beam"){: style="width:600px"}
 
-| Input   | comment                       |
-| ------- | :---------------------------- |
-| Geom    | Brep closed                   |
-| Axis    | Axis system [optional]        |
-| CwAttr  | Userattributes [optional]     |
-| StdAttr | Standardattributes [optional] |
+| Input          | comment                                     |
+| -------------- | :------------------------------------------ |
+| Geom           | Brep closed                                 |
+| Axis           | Axis system [optional]                      |
+| CwAttr         | Userattributes [optional]                   |
+| StdAttr        | Standardattributes [optional]               |
+| Endtype(Start) | Endtype start point element axis [optional] |
+| Endtype(End)   | Endtype end point element axis [optional]   |
+| BakeCW         | bake in cadwork [optional]                  |
+| ElementID      | Element ID [optional]                       |
 
 | Output | comment                         |
 | ------ | :------------------------------ |
@@ -31,12 +35,16 @@ Or via the input param BakeCW.
 The **Panel** component generates a panel in cadwork.
 ![Backup Text](../img/panel.png "Panel"){: style="width:600px"}
 
-| Input   | comment                       |
-| ------- | :---------------------------- |
-| Geom    | Brep closed                   |
-| Axis    | Axis system [optional]        |
-| CwAttr  | Userattributes [optional]     |
-| StdAttr | Standardattributes [optional] |
+| Input          | comment                                     |
+| -------------- | :------------------------------------------ |
+| Geom           | Brep closed                                 |
+| Axis           | Axis system [optional]                      |
+| CwAttr         | Userattributes [optional]                   |
+| StdAttr        | Standardattributes [optional]               |
+| Endtype(Start) | Endtype start point element axis [optional] |
+| Endtype(End)   | Endtype end point element axis [optional]   |
+| BakeCW         | bake in cadwork [optional]                  |
+| ElementID      | Element ID [optional]                       |
 
 | Output | comment                         |
 | ------ | :------------------------------ |
@@ -47,11 +55,13 @@ The **Panel** component generates a panel in cadwork.
 The **AuxVol** component generates an auxiliary volume in cadwork.
 ![Backup Text](../img/auxi.png "Panel"){: style="width:600px"}
 
-| Input   | comment                       |
-| ------- | :---------------------------- |
-| Geom    | Brep closed                   |
-| CwAttr  | Userattributes [optional]     |
-| StdAttr | Standardattributes [optional] |
+| Input     | comment                       |
+| --------- | :---------------------------- |
+| Geom      | Brep closed                   |
+| CwAttr    | Userattributes [optional]     |
+| StdAttr   | Standardattributes [optional] |
+| BakeCW    | bake in cadwork [optional]    |
+| ElementID | Element ID [optional]         |
 
 | Output | comment                         |
 | ------ | :------------------------------ |
@@ -65,13 +75,15 @@ The **Drilling** component generates a bolt in cadwork. The components needs as 
 
 ![Backup Text](../img/drilling.png "Drilling"){: style="width:600px"}
 
-| Input         | comment                  |
-| ------------- | :----------------------- |
-| Point_1       | Start Point              |
-| Point_2       | End Point                |
-| Diameter [mm] | Supplement Drilling [mm] |
-| CwAttr        | Standard Attributes      |
-| StdAttr       | Standard Attributes      |
+| Input         | comment                             |
+| ------------- | :---------------------------------- |
+| Point_1       | Start Point                         |
+| Point_2       | End Point                           |
+| Diameter [mm] | Supplement Drilling [mm]            |
+| Supplement    | supplement diameter [mm] [optional] |
+| CwAttr        | Standard Attributes                 |
+| StdAttr       | Standard Attributes                 |
+| BakeCW        | bake in cadwork [optional]          |
 
 | Output | comment                         |
 | ------ | :------------------------------ |
@@ -90,6 +102,7 @@ The **Connector Axis** component generates a Standard Connector Axis in cadwork.
 | Point_2        | End Point                    |
 | CwAttr         | Standard Attributes          |
 | StdAttr        | Standard Attributes          |
+| BakeCW         | bake in cadwork [optional]   |
 
 | Output | comment                         |
 | ------ | :------------------------------ |
@@ -116,11 +129,13 @@ An X vector and a Z vector are specified.
 The **AuxVol** component generates an auxiliary volume in cadwork.
 ![Backup Text](../img/createSurface.jpg "Surface"){: style="width:600px"}
 
-| Input   | comment                       |
-| ------- | :---------------------------- |
-| Geom    | Surface                       |
-| CwAttr  | Userattributes [optional]     |
-| StdAttr | Standardattributes [optional] |
+| Input     | comment                       |
+| --------- | :---------------------------- |
+| Geom      | Surface                       |
+| CwAttr    | Userattributes [optional]     |
+| StdAttr   | Standardattributes [optional] |
+| BakeCW    | bake in cadwork [optional]    |
+| ElementID | Element ID [optional]         |
 
 | Output | comment                         |
 | ------ | :------------------------------ |
@@ -131,11 +146,13 @@ The **AuxVol** component generates an auxiliary volume in cadwork.
 The **AuxVol** component generates an auxiliary volume in cadwork.
 ![Backup Text](../img/createLine.jpg "Surface"){: style="width:600px"}
 
-| Input   | comment                       |
-| ------- | :---------------------------- |
-| Geom    | Line                          |
-| CwAttr  | Userattributes [optional]     |
-| StdAttr | Standardattributes [optional] |
+| Input     | comment                       |
+| --------- | :---------------------------- |
+| Geom      | Line                          |
+| CwAttr    | Userattributes [optional]     |
+| StdAttr   | Standardattributes [optional] |
+| BakeCW    | bake in cadwork [optional]    |
+| ElementID | Element ID [optional]         |
 
 | Output | comment                         |
 | ------ | :------------------------------ |
@@ -146,11 +163,13 @@ The **AuxVol** component generates an auxiliary volume in cadwork.
 The **AuxVol** component generates an auxiliary volume in cadwork.
 ![Backup Text](../img/createNode.jpg "Surface"){: style="width:600px"}
 
-| Input   | comment                       |
-| ------- | :---------------------------- |
-| Geom    | Point                         |
-| CwAttr  | Userattributes [optional]     |
-| StdAttr | Standardattributes [optional] |
+| Input     | comment                       |
+| --------- | :---------------------------- |
+| Geom      | Point                         |
+| CwAttr    | Userattributes [optional]     |
+| StdAttr   | Standardattributes [optional] |
+| BakeCW    | bake in cadwork [optional]    |
+| ElementID | Element ID [optional]         |
 
 | Output | comment                         |
 | ------ | :------------------------------ |

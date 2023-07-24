@@ -9,12 +9,18 @@ La fonction **Select Elements** permet de sélectionner des éléments cadwork B
 | ----- | :------------------------------------------------------- |
 | None  | Sélectionner/ajouter des éléments via le menu contextuel |
 
-| Output           | comment                            |
-| ---------------- | :--------------------------------- |
-| OutputBrep       | Retour des éléments dans une liste |
-| OutputXSectPlane | Restitution du niveau XY           |
-| OutputCwAttr     | Retour des attributs utilisateur   |
-| OutputStdAttr    | Retour des attributs standard      |
+| Output           | comment                  |
+| ---------------- | :----------------------- |
+| OutputBrep       | éléments dans une liste  |
+| OutputXSectPlane | Restitution du niveau XY |
+| X-Local-Axis     | X-axe                    |
+| Z-Local-Axis     | Z-axe                    |
+| P1               | Point d'axe 1            |
+| P2               | Point d'axe 2            |
+| P3               | Point d'axe 3            |
+| OutputCwAttr     | attributs utilisateur    |
+| OutputStdAttr    | attributs standard       |
+| Element-ID       | Element ID               |
 
 ![Backup Text](../img/brep.jpg "BREP")
 
@@ -29,11 +35,12 @@ La fonction **Select Elements** permet de sélectionner des surfaces et de les l
 | ----- | :------------------------------------------------------- |
 | None  | Sélectionner/ajouter des éléments via le menu contextuel |
 
-| Output        | comment                            |
-| ------------- | :--------------------------------- |
-| OutputSurface | Retour des éléments dans une liste |
-| OutputCwAttr  | Retour des attributs utilisateur   |
-| OutputStdAttr | Retour des attributs standard      |
+| Output        | comment                 |
+| ------------- | :---------------------- |
+| OutputSurface | éléments dans une liste |
+| OutputCwAttr  | attributs utilisateur   |
+| OutputStdAttr | attributs standard      |
+| Element-ID    | Element ID              |
 
 ## Select Line(s)
 
@@ -46,11 +53,12 @@ La fonction **Select Elements** permet de sélectionner des lignes et de les lie
 | ----- | :------------------------------------------------------- |
 | None  | Sélectionner/ajouter des éléments via le menu contextuel |
 
-| Output        | comment                            |
-| ------------- | :--------------------------------- |
-| OutputLine    | Retour des éléments dans une liste |
-| OutputCwAttr  | Retour des attributs utilisateur   |
-| OutputStdAttr | Retour des attributs standard      |
+| Output        | comment                 |
+| ------------- | :---------------------- |
+| OutputLine    | éléments dans une liste |
+| OutputCwAttr  | attributs utilisateur   |
+| OutputStdAttr | attributs standard      |
+| Element-ID    | Element ID              |
 
 ## Select Node(s)
 
@@ -63,8 +71,9 @@ La fonction **Select Elements** permet de sélectionner des nœuds et de les ass
 | ----- | :------------------------------------------------------- |
 | None  | Sélectionner/ajouter des éléments via le menu contextuel |
 
-| Output        | comment                            |
-| ------------- | :--------------------------------- |
-| OutputNode    | Retour des éléments dans une liste |
-| OutputCwAttr  | Retour des attributs utilisateur   |
-| OutputStdAttr | Retour des attributs standard      |
+| Output        | comment                 |
+| ------------- | :---------------------- |
+| OutputNode    | éléments dans une liste |
+| OutputCwAttr  | attributs utilisateur   |
+| OutputStdAttr | attributs standard      |
+| Element-ID    | Element ID              |
