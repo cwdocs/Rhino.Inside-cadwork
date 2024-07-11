@@ -19,5 +19,5 @@ PyYAML==5.4.1
 pyyaml_env_tag==0.1
 six==1.16.0
 watchdog==2.1.6
-zipp==3.6.0
+zipp==3.19.1
 mike==1.1.2
